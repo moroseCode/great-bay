@@ -5,11 +5,11 @@ USE greatbay;
 
 CREATE TABLE items(
   id INT NOT NULL auto_increment,
-  price INT NOT NULL,
+  price DECIMAL NOT NULL,
   item VARCHAR(45) NOT NULL,
   description VARCHAR(120) NOT NULL,
   name VARCHAR(45) NOT NULL,
-  highestBidder VARCHAR(45) NOT NULL,
+  highestBidder VARCHAR(45),
   PRIMARY KEY (id)
 );
 
